@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Aid_Assistant_3</string>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="blood_group">
+        <item>O+</item>
+        <item>A+</item>
+        <item>B+</item>
+        <item>AB+</item>
+        <item>O-</item>
+        <item>A-</item>
+        <item>B-</item>
+        <item>AB-</item>
+    </string-array>
+
+    <string-array name="Medicine_names">
+        <item>Seclo</item>
+        <item>Napa</item>
+        <item>MexPro</item>
+        <item>Vaseline</item>
+        <item>Rexona</item>
+        <item>Ryzen</item>
+        <item>Intel</item>
+        <item>ASRock</item>
+    </string-array>
+
+    <string-array name="Disease">
+        <item>Dengue</item>
+        <item>Diabetes</item>
+        <item>Tuberculosis</item>
+        <item>Fever</item>
+        <item>Cancer</item>
+        <item>Liver cancer</item>
+        <item>Brain tumor</item>
+        <item>Cholestrol</item>
+    </string-array>
+
+    <string-array name="Medicine_times">
+        <item>1+2+3</item>
+        <item>2+3+4</item>
+        <item>1+2+3</item>
+        <item>1+2+3</item>
+        <item>1+2+3</item>
+        <item>1+2+3</item>
+        <item>1+2+3</item>
+        <item>1+2+3</item>
+    </string-array>
+</resources>

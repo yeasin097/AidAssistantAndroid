@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#fafafa"
+    android:weightSum="5">
+    <ImageView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:src="@drawable/behealthy"
+        android:id="@+id/med_image"/>
+
+    <LinearLayout
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:orientation="vertical">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+            android:background="#daf3f0"
+                android:weightSum="2">
+            <TextView
+                android:layout_weight=".1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tablet"
+                android:textColor="#0c4453"
+                android:textSize="30sp"
+                android:id="@+id/med_name"
+                android:paddingRight="10sp"
+                android:paddingStart="10sp"/>
+            <TextView
+                android:layout_weight="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Napa 500mg"
+                android:textColor="#0c4453"
+                android:layout_gravity="right"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="#daf3f0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1-2-1"
+                android:textSize="20sp"
+                android:paddingStart="10sp"
+                android:id="@+id/med_time"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7 Days left"
+                android:layout_gravity="right"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <TextView
+            android:background="#daf3f0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Dont "
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:paddingLeft="10sp"/>
+    </LinearLayout>
+
+</LinearLayout>

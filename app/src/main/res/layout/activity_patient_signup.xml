@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup_doctor"
+    android:background="@drawable/signupimage">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/patient_signuptext"
+            android:text="Patient Signup"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:padding="10sp"
+            android:layout_marginTop="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/patient_signupname"
+            android:layout_margin="10sp"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textSize="20sp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/patient_signuptext"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/patient_signupphone"
+            android:layout_margin="10sp"
+            android:hint="Phone"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/patient_signupname"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/patient_signupaddress"
+            android:layout_margin="10sp"
+            android:hint="Address"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/patient_signupphone"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/patient_signupemail"
+            android:layout_margin="10sp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textSize="20sp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/patient_signupaddress"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/patient_signuppassword"
+            android:layout_margin="10sp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textSize="20sp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/patient_signupemail"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/patient_signuprepassword"
+            android:layout_margin="10sp"
+            android:inputType="textPassword"
+            android:hint="Retype Password"
+            android:textSize="20sp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/patient_signuppassword"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/patient_signupDOB"
+            android:layout_margin="10sp"
+            android:hint="Date of Birth"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:padding="5sp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/patient_signuprepassword"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/patient_signupDOB"
+            android:id="@+id/patient_signupblood"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="10sp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/patient_signupblood"
+            android:id="@+id/patient_signupgender"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="10sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/patient_signupweight"
+            android:layout_margin="10sp"
+            android:hint="Weight(KG)"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/patient_signupgender"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/patient_signupheight"
+            android:layout_margin="10sp"
+            android:hint="Height(cm)"
+            android:inputType="number"
+            android:textSize="20sp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/patient_signupweight"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/patient_signupAllergy"
+            android:layout_margin="10sp"
+            android:hint="Allergies: Dust, Flowers, Sun"
+            android:inputType="text"
+            android:textSize="20sp"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/patient_signupheight"/>
+
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/patient_signupsubmit"
+            android:text="Submit"
+            android:textSize="20sp"
+            app:layout_constraintTop_toBottomOf="@id/patient_signupAllergy"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="30sp"
+            android:backgroundTint="#0c4453"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</ScrollView>
